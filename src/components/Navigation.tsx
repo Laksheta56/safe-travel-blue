@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { Home, MapPin, Users, Bell, User, AlertTriangle } from "lucide-react";
+import { Home, MapPin, Users, Bell, User, AlertTriangle, Shield } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navigation = () => {
@@ -11,6 +11,7 @@ const Navigation = () => {
     { icon: MapPin, label: "Trip", path: "/trip-planning" },
     { icon: Users, label: "Friends", path: "/friends" },
     { icon: Bell, label: "Alerts", path: "/alerts" },
+    { icon: Shield, label: "Zones", path: "/geo-fencing" },
     { icon: User, label: "Profile", path: "/profile" },
   ];
 

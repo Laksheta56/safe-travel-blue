@@ -10,6 +10,7 @@ import Friends from "./pages/Friends";
 import Alerts from "./pages/Alerts";
 import Emergency from "./pages/Emergency";
 import Profile from "./pages/Profile";
+import GeoFencing from "./pages/GeoFencing";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/emergency" element={<Emergency />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/geo-fencing" element={<GeoFencing />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
